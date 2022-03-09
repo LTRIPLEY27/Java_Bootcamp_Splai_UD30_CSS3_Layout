@@ -1,0 +1,59 @@
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+#container {
+    background-color: whitesmoke;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;  /*POSICION*/
+/*UBICACIÓN DEL CONTAINER PARA ASUMIR EL TOTAL DEL BODY Y EN RELACIÓN A ÉL LOS ELEMENTOS*/
+}
+
+/*POSICION DEL DIV HEADER EN RELACIN A SUS HIJOS, SERÁ LA REFERENCIA DE UBICACIÓN PARA LOS MISMOS*/
+
+#hijo1  {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+#hijo1 > div{
+    background-color: antiquewhite;
+    border: 1px solid blue;
+    margin: 15px;
+}
+
+/*ENCABEZADO IZQUIERDO*/
+#head1, #head2  {
+    margin-left: 5px;
+    width: 120px;
+    height: 20px;
+}
+
+#head4, #head5, #icono, #foto {
+    margin-left: 5px;
+    width: 50px;
+    height: 20px;
+}
+
+#head3 {
+    width: 60%;
+}
+
+#main   {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    margin: 100px;   
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+    background-color: blueviolet;
+    border: solid black 1px;
+    background-image: url("/Tarea1_Flexbox/img/google.PNG");
+}
+
