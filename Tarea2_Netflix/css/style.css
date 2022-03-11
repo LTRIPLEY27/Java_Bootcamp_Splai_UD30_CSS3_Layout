@@ -1,0 +1,260 @@
+body{
+    margin: auto 0;
+}
+
+main {
+    display: grid;
+    height: 100%;
+    width: 100%;
+   /* height: 100vh;*/
+    background-color: rgb(0, 7, 7);
+    grid-gap: 10px;
+   /* DEFINICION DE FILAS Y COLUMNAS POR NOMBRES DE LINEAS*/
+   grid-template-columns: 
+        [header-start] 6fr
+        [footer-start] 6fr
+        [fila1-start] 6fr
+        [fila2-start] 6fr
+        [fila3-start] 6fr
+   ;
+
+   grid-template-rows: 
+    [header-start] 1fr
+    [fila1-start] 1fr
+    [fila2-start] 1fr
+    [fila3-start] 1fr
+    [footer-start] 1fr
+   ;
+}
+
+main > * {
+    background-color: rgb(7, 7, 0);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.panel-cuenta,  footer , .fila1 , .fila2, .fila3     {
+    grid-column: header-start / span 5;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    color: rgb(252, 251, 250);
+    background-color: black;
+    font-family: Arial;
+}
+.doc {
+    display: flex;
+    margin-top: 140px;
+    position: absolute;
+    color: rgb(249, 249, 252);
+    background-color: black;
+    margin-left: -85%;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+.fila1  {
+    display: flex;
+    flex-direction: row;
+}
+
+.filas {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 0, 5);
+    border: 1px solid black;
+}
+
+.filas > *{
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    background-color: rgb(5, 3, 0);
+}
+
+#narcos {
+    background-image: url("../img/narcos.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#house {
+    background-image: url("../img/house.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#rick {
+    background-image: url("../img/rickYmorty.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#stranger {
+    background-image: url("../img/stranger.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#mono {
+    background-image: url("../img/mono.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.fila2  {
+    display: flex;
+    flex-direction: row;
+}
+
+.filas2-hijo {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 0, 5);
+    border: 1px solid black;
+}
+
+.filas2-hijo > * {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    background-color: rgb(8, 5, 1);
+}
+
+#black {
+    background-image: url("../img/black.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#blacklist {
+    background-image: url("../img/blacklist.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#color {
+    background-image: url("../img/color.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#heroes {
+    background-image: url("../img/heroes.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#luke {
+    background-image: url("../img/luke.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.fila3  {
+    display: flex;
+    flex-direction: row;
+}
+
+.filas3-hijo {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 2, 5);
+    border: 1px solid black;
+}
+
+.filas3-hijo > * {
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    background-color: rgb(2, 1, 0);
+}
+
+#mindhunter {
+    background-image: url("../img/midhunter.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#pulpo {
+    background-image: url("../img/pulpo.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#sam {
+    background-image: url("../img/sam.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#desencanto {
+    background-image: url("../img/desencanto.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#loveDeaths {
+    background-image: url("../img/loveDeaths.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#logo   {
+    width: 100px;
+    height: 50px;
+    background-image: url("../img/netflix.PNG");
+    background-size: 100%;
+    margin-left: 50px;
+}
+
+#lupa   {
+    margin-left: 30%;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/lupa.PNG");
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#regalo   {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/regalo.PNG");
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#notificacion   {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/notificacion.PNG");
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#perfil   {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/perfil.PNG");
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.espacio    {
+    margin-left: 5px;
+}
